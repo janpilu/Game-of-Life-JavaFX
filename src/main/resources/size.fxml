@@ -1,0 +1,16 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="gol.SizeController" fx:id="root"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="5" vgap="5">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+
+    <ComboBox fx:id="sizeSelect" GridPane.columnIndex="0" GridPane.rowIndex="1" promptText="size" onAction="#setSize"/>
+    <ComboBox fx:id="difficultySelect" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Text text="x" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Text GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="show"/>
+    <Button fx:id="submitSize" GridPane.rowIndex="2" GridPane.columnIndex="2" onAction="#submitSize" text="Submit" disable="true" />
+
+</GridPane>

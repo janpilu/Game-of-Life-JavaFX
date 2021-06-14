@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:id="root" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gol.GameController">
+    <MenuBar GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="menu">
+        <Menu fx:id="options" text="Options">
+            <MenuItem text="Reset" onAction="#reset" fx:id="resetItem"></MenuItem>
+            <MenuItem text="Resize" onAction="#resize"></MenuItem>
+        </Menu>
+    </MenuBar>
+    <GridPane fx:id="grid" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+              alignment="center" GridPane.rowIndex="1">
+        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    </GridPane>
+</GridPane>
